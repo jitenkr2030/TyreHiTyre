@@ -54,7 +54,7 @@ export default function SignIn() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold text-blue-600">
-            🚗 TyreHiTyre.com
+            🚗 Tyre Hi Tyre
           </CardTitle>
           <p className="text-gray-600">Sign in to your account</p>
         </CardHeader>

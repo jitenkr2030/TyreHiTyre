@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
     
     // Company Header
     pdf.setFontSize(20)
-    pdf.text('TyreHiTyre.com', 20, 20)
+    pdf.text('Tyre Hi Tyre', 20, 20)
     pdf.setFontSize(10)
     pdf.text('Complete Tyre Sales & Purchase Management', 20, 27)
     pdf.text('123, Main Street, City - 600001', 20, 34)

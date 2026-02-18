@@ -72,7 +72,7 @@ export function PWAInstallPrompt() {
           
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-semibold text-gray-900 mb-1">
-              Install TyreHiTyre App
+              Install Tyre Hi Tyre App
             </h3>
             <p className="text-xs text-gray-600 mb-3">
               Get the full app experience with offline access and faster performance.

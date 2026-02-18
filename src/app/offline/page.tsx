@@ -85,7 +85,7 @@ export default function OfflinePage() {
 
             <div className="pt-4 border-t border-gray-200">
               <p className="text-xs text-gray-500">
-                TyreHiTyre will automatically reconnect when internet is available.
+                Tyre Hi Tyre will automatically reconnect when internet is available.
                 Your offline actions will be synced automatically.
               </p>
             </div>
