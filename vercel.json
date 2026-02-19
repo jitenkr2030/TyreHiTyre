@@ -9,21 +9,39 @@
     }
   },
   "env": {
-    "NEXTAUTH_URL": "https://tyre-hi-tyre-mcup.vercel.app",
+    "NEXTAUTH_URL": "https://tyre-hi-tyre-mcup-l3s0c15ee-jiten-kumars-projects.vercel.app",
     "NEXTAUTH_SECRET": "your-nextauth-secret-here-change-in-production",
     "NODE_ENV": "production"
   },
   "headers": [
     {
-      "source": "/_next/static/css/(.*)",
+      "source": "/_next/static/(.*)",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/css"
-        },
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/manifest.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json"
         }
       ]
     },
