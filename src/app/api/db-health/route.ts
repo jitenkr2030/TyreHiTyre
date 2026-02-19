@@ -18,10 +18,13 @@ export async function GET() {
     // Test tyre table
     const tyreCount = await db.tyre.count()
     
+    // Type assertion for the database result
+    const dbInfo = result as any[]
+    
     return NextResponse.json({
       status: 'healthy',
       database: 'connected',
-      postgresql_info: result[0],
+      postgresql_info: dbInfo[0],
       tyre_count: tyreCount,
       timestamp: new Date().toISOString(),
       message: tyreCount > 0 ? 'Database is ready with data' : 'Database is connected but empty'
