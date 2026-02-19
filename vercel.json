@@ -11,8 +11,7 @@
   "env": {
     "NEXTAUTH_URL": "https://tyre-hi-tyre-mcup.vercel.app",
     "NEXTAUTH_SECRET": "your-nextauth-secret-here-change-in-production",
-    "NODE_ENV": "production",
-    "DATABASE_URL": "postgresql://username:password@host:port/database"
+    "NODE_ENV": "production"
   },
   "headers": [
     {
