@@ -1,5 +1,5 @@
 {
-  "buildCommand": "bun run build",
+  "buildCommand": "bun run build && bun run db:generate",
   "outputDirectory": ".next",
   "installCommand": "bun install",
   "framework": "nextjs",
@@ -9,9 +9,10 @@
     }
   },
   "env": {
-    "NEXTAUTH_URL": "https://tyrehityre.vercel.app",
-    "NEXTAUTH_SECRET": "your-nextauth-secret-here",
-    "NODE_ENV": "production"
+    "NEXTAUTH_URL": "https://tyre-hi-tyre-mcup.vercel.app",
+    "NEXTAUTH_SECRET": "your-nextauth-secret-here-change-in-production",
+    "NODE_ENV": "production",
+    "DATABASE_URL": "postgresql://username:password@host:port/database"
   },
   "headers": [
     {
